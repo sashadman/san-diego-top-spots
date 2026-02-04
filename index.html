@@ -1,14 +1,56 @@
-<!DOCTYPE html>
-<html>
 
 <head>
-    <meta charset="utf-8">
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>San Diego Top Spots</title>
+ <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-    <!-- Write your markup here -->
+<div class="page">
+<header class="hero">
+<div class="hero__text">
+<h1>San Diego Top Spots</h1>
+<p>Hand-picked places to explore - with quick Map links. </p>
+</div>
+<img 
+class="hero__image"
+src="assets/images/hero.jpg"
+alt="San Diego coastline at sunset"
+/> 
+</header>
+<main class="card">
+    <div class="card__header">
+        <h2>Top Spots</h2>
+
+    </div>
+  
+    <div class="table-wrap">
+        <table class="spots-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>map</th>
+            </tr>
+        </thead> 
+        <img src="assets/images/sd.jpg" alt="San Diego from Sky" class="spot_image"/> 
+        <tbody id="top-spots"></tbody>
+    </table>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>Built by Sha @ Web 102</p>
+    <p>© <span id="year"></span> Shadman. All rights reserved.</p>
+</footer>
+</div>
+
 
     <!-- Don't forget to add your <script> tag here -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
+
